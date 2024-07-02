@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<title> Addition App By omkar </title>
+	<style>
+		* {font-size:40px;}
+		body {background-color:lightblue;}
+		h1 {background-color:black;color:white;width:50%;border-radius:40px;}
+
+	</style>
+	</head>
+	<body>
+	<center>
+	<h1>Color App </h1>
+	<form onsubmit="show()">
+	<input type="submit" value="Red"/>
+	<input type="submit" value="Green"/>
+	<input type="submit" value="Blue"/>
+	</form>
+
+	<script>
+		function show()
+		{
+			event.preventDefault();
+			let action=document.activeElement.value;
+
+			if (action==="Red")
+				document.body.style.backgroundColor="red";
+			else if (action==="Green")
+				document.body.style.backgroundColor="green";	
+			else 
+				document.body.style.backgroundColor="blue";			
+
+
+
+		}
+
+	</script>
+	
+	</center>
+	</body>
+
+</html>
